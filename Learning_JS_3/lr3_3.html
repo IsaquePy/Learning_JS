@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            color: white;
+        }
+        div#divi{
+            background-color: red;
+            height: 20px;
+            width:100px;
+            line-height: 20px;
+            text-align: center;
+        }
+        input{
+            width: 60px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+   
+    <input type="number" name="txtn1" id = "txtn1">
+    +   
+    <input type="number" name="txtn2" id = "txtn2">
+<br>
+    <input type="button" value="Somar" onclick="somar()">
+<br><br>
+    <div id="divi">
+        Resultado..
+    </div>
+    
+    <script>
+        //Somando!
+
+        function somar(){
+            var num1 = document.getElementById('txtn1')
+            var num2 = document.getElementById('txtn2')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var result = document.getElementById('divi')
+            var soma = n1+n2
+            result.innerText= soma
+            result.style.background = 'green'
+
+        }
+    </script>
+</body>
+</html>

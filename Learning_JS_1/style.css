@@ -4,5 +4,9 @@ body{
 }
 h1{
   font-size:30px;
-  color:black;
+  color:pink
+}
+
+p{
+  color: blueviolet;
 }
