@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verificação de estrangerismo</h1>
+    Origem:<input type="text" id="txtest" class="input">
+    <br>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div class="divi" id="di">
+        Result
+    </div>
+    <script>
+
+    function verificar(){
+        var est = document.getElementById('txtest')
+        var resul = document.getElementById('di')
+        if (est === 'Brasil'){
+            document.innerText= 'Voce é Brasileiro!!'
+            resul.className = 'Certo'
+        } else{
+            resul.innerText= "Voce é Estrangeiro!!"
+            resul.className = 'Errado'
+        }
+    }
+
+    /*Por algum motivo o 'est' ta 
+    dando como '[object HTMLInputElement]'
+    , tipo , é isso mesmo , porem ele nao
+    ta pegando o resultado*/
+
+    </script>
+</body>
+</html>

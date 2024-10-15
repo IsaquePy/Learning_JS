@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verificação de Velocidade!</h1>
+    Velocidade : <input type="number" name="txtvel" id="txtvel">Km/h
+<br>
+<strong>Limite : 60km/h</strong>
+<br>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <br>
+    <div class="divi" id="divi">
+        Waiting...
+    </div>
+ 
+    <script>
+        function verificar(){
+            var vel = document.getElementById('txtvel')
+            var vel = Number(vel.value)
+            var resul = document.getElementById('divi')
+            if (vel > 60){
+                resul.innerText= 'Multado!'
+                resul.className = 'Errado'
+            } else{
+                resul.innerText= 'Tudo Certo!'
+                resul.className = 'Certo'
+            }
+        }
+    </script>
+</body>
+</html>

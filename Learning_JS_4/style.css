@@ -1,0 +1,47 @@
+body{
+  background-color:gray;
+}
+
+h1{
+  font-size:30px;
+  color:white
+}
+
+p{
+  color: black;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input{
+  background-color: black;
+  color: white;
+  width: 150px;
+  border-radius: 10%;
+  
+}
+.divi{
+  background-color: aqua;
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+  font-size: 10px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.Certo{
+  background-color:lightgreen;
+  text-align: center;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+}
+.Errado{
+  background-color:red;
+  text-align: center;
+  line-height:50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+}
