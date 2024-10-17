@@ -1,0 +1,46 @@
+body{
+    background-color: #2596be;
+}
+.div {
+    background-image: linear-gradient(to right, black, #145369);
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    border-radius: 4%;
+    border: solid;
+    border-color: black;
+    transition: height 0.3s ease;
+    transition: border-radius 0.3s ease;
+    max-height: 750px; 
+    overflow-y: auto; 
+}
+
+.dados{
+    text-align: center;
+}
+.Meio{
+    font-size:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+.lista{
+    background-color: #145369;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    position: absolute;
+    left: 37%;
+    justify-content: center;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0, 100);
+
+}
+.newdata{
+    background-color: white;
+}
