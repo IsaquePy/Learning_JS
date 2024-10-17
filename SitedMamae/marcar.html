@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carla Design</title>
+    <link rel="icon" type="image/png" href="foto.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="barra"><!--Barra de cima-->
+        <img src="foto.png" class="logo">
+        <div class="meio">
+            <div class="inputs" id="aviso">
+                <strong>
+                Nome : <br> <input type="text" class="dados" id="txtnome"><br><!--Nome-->
+                Data : <br> <input type="date" class="dados"><br><!--Data-->
+                Numero : <br> <input type="text" class="dados" id="numero"><br>
+                Procedimento: <br> <input type="checkbox" id="ckUnha" ><!--Unha?-->
+                <label for="ckUnha" style="color: black;">Unha</label> 
+                <input type="checkbox"id="ckPe"><!--Pé?-->
+                <label for="ckPe"style="color: black;">Pé</label><br><br>
+                <input type="button" value="MARCAR" class="botao" onclick="marcar()"><!--Marcar-->
+
+                </strong>
+                
+            </div>
+        </div>
+    
+    </div>
+    <script>
+        function marcar(){
+            var aviso = document.getElementById('aviso')
+            var nomeI = document.getElementById('txtnome')
+            var numI = document.getElementById('numero')
+            var unha = document.getElementById('ckUnha')
+            var pe = document.getElementById('ckPe')
+            var nome = nomeI.value
+            var num = numI.value
+            if (nome.length!=0) {
+                if (num.length!=0) {
+                    if (unha.checked || pe.checked) {
+                        location.href='index.html'
+                    }else{
+                        aviso.innerHTML="<strong><br><br><br><br><span style='color:red;font-size:40px;'>Preencha todos os<br> campos!</span></strong><br><a href='marcar.html'>Voltar</a>"
+                    }
+                }else{
+                    aviso.innerHTML="<strong><br><br><br><br><span style='color:red;font-size:40px;'>Preencha todos os<br> campos!</span></strong><br><a href='marcar.html'>Voltar</a>"
+                }
+
+            }else{
+                aviso.innerHTML="<strong><br><br><br><br><span style='color:red;font-size:40px;'>Preencha todos os<br> campos!</span></strong><br><a href='marcar.html'>Voltar</a>"
+            }
+            
+        }
+    </script>
+</body>
+</html>
