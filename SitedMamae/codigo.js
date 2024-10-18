@@ -30,4 +30,4 @@ function obterListaFormatada(nomeArquivo) {
 
 // Exemplo de uso da função
 var listamae = obterListaFormatada('exp.txt'); // Chama a função
-console.log(listamae); // Exibe a lista já formatada
+console.log(listamae); // Exibe a lista já formatadaa
