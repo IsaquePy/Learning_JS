@@ -1,8 +1,4 @@
-//O codigo abaixo até a linha 36 foi feito por uma IA , entao nao mereço creditos 
-//nao fiz eu mesmo pois tenho um pouco de dificuldade de mecher com JSON e ainda
-//nao estou tao avancado assim em JS
 const fs = require('fs');
-
 /**
  * Função que lê um arquivo .txt e retorna a lista já formatada.
  * @param {string} nomeArquivo - O nome do arquivo .txt que contém a lista.
@@ -30,14 +26,30 @@ function obterListaFormatada(nomeArquivo) {
         return null; // Retorna null em caso de erro
     }
 }
-
 // Exemplo de uso da função
 var listamae = obterListaFormatada('dados.txt'); // Chama a função
-console.log(listamae[0]); // Exibe a lista já formatada
+console.log(listamae); // Exibe a lista já formatada
+/**
+ * Função que escreve uma string em um arquivo.
+ * @param {string} nomeArquivo - O nome do arquivo onde a string será escrita.
+ * @param {string} conteudo - O conteúdo que será escrito no arquivo.
+ */
+function devolver(nomeArquivo) {
+    console.log("entro aq")
+    var nome = document.getElementById('nome')
+    console.log(nome.value)
+    nome = nome.value
+    var nvfilha = [nome , "pe" , 424]
+    var conteudo = `listamae[["clienteI",0,3],[${nome},'pe' ,43]]`
+    try {
+        fs.writeFileSync(nomeArquivo, conteudo+`[${nome.value},pe,123]]`, 'utf8');
+        console.log(`Conteúdo escrito no arquivo ${nomeArquivo} com sucesso.`);
+    } catch (error) {
+        console.error("Erro ao escrever no arquivo: ", error.message);
+    }
+}
 
-var clientes = [['maria','unha',123] ,//  00 01 02
-                ['carla','pe',563],//     10 11 12
-                ['sofia','unha',984] , // 20 21 22
-                ['ivani','pe',590]]//     30 31 32
-num = 3
-console.log(`O cliente é ${clientes[num][0]}, seu numero é ${clientes[num][2]} e quer fazer ${clientes[num][1]}`)
+
+// Chama a função devolver para escrever uma nova lista no arquivo
+
+devolver('dados.txt', 'listamae[[2,4,6],[1,3,5]]'); // Exemplo de uso da função devolver

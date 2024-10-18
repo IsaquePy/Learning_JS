@@ -1,0 +1,3 @@
+Basicamente eu "Nao consegui" , porem nao por incompetencia ou algo assim , mas sim por ter que mecher com JSON e arquivos
+globais , por exemplo um arquivo que todos os clientes verao igual , e eu ainda nao entrei na parte que liga os clientes , 
+nao estou desistindo do projeto , porem vou deixar de lado para quando saber mais eu dar continuidade
