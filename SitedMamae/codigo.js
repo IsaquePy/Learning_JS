@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 /**
- * Função que lê um arquivo .txt e retorna a lista já formatada.
+ * Fugnção que lê um arquivo .txt e retorna a lista já formatada.
  * @param {string} nomeArquivo - O nome do arquivo .txt que contém a lista.
  * @returns {Array} - Retorna a lista de arrays.
  */
