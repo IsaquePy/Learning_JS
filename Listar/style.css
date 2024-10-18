@@ -1,8 +1,12 @@
 body{
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
     background-color: #2596be;
 }
 .div {
-    background-image: linear-gradient(to right, black, #145369);
+    background-color: gray;
     height: 100px;
     width: 500px;
     position: absolute;
@@ -16,7 +20,7 @@ body{
     border-color: black;
     transition: height 0.3s ease;
     transition: border-radius 0.3s ease;
-    max-height: 750px; 
+    max-height: 550px; 
     overflow-y: auto; 
 }
 
@@ -41,6 +45,17 @@ body{
     box-shadow: 10px 10px 0px 0px rgba(0,0,0, 100);
 
 }
+
 .newdata{
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 50px;
     background-color: white;
+    width: 400px;
+    color: black;
+    line-height: 30px;
+}
+.name{
+    background-color: white
 }
