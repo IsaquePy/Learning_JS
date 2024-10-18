@@ -12,7 +12,8 @@
 }
 
 .fundo{
-    background-image: linear-gradient(orange,purple);
+    background:gray;
     height:50vmax;
+    font-size: 40px;
 
 }
