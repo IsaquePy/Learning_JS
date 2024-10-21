@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+.titulo{
+    background-color: greenyellow;
+    height: 10%;
+    text-align: center;
+    line-height: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.principal{
+    width: 75%;
+    max-height: 90%;
+    overflow-y: auto;
+    position: absolute;
+    display: inline-block;
+    border-right: solid black 5px;
+    /*background-color: blueviolet;*/
+}
+
+.bloco{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border: solid black 5px;
+    box-shadow: 5px 5px 5px 5px gray;
+    transition: 0.5s ease;
+    border-radius: 20%;
+    align-items: center;
+    text-align: center;
+    margin: 20px;  
+}
+
+.lado{
+    display: inline-block;
+   /* background-color: aquamarine;*/
+    margin-left: 75.5%;
+    width: 25%;
+    max-height: 90%;
+    overflow-y: auto;
+    position: absolute;
+    line-height: 30px;
+}
+
+img{
+    padding-top:px ;
+    width: 60%;
+    height: 70%;
+    
+}
+
+p{
+    display: flex;
+    font-size: 30px;
+    margin: 6px;
+}
+
+.comprar{
+    width: 200px;
+    height: 30px;
+    border-radius: 7%;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 20px;
+}
+
+a{
+    font-style:italic;
+    text-decoration: none;
+    font-size: 20px;
+    color: yellowgreen;
+}
+
+.carrinho{
+    background-color: white;
+    overflow-y: auto;
+    margin-left: 6%;
+    width: 75%;
+    height: 300px;
+    border-radius: 5%;
+    border: solid black 2px;
+}

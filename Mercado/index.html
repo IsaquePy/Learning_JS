@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="titulo">    
+        <h1>Mercado</h1>
+    </header>
+    <div class="principal" id="principal">
+      <div class="bloco" id="carne"> <!--Carne-->
+            <img src="carne.png" class="propaganda"><br>
+            <p>Carne de marca generica</p>
+            <p>Preço : R$40,00/kg</p>
+            <input type="button" value="Comprar" class="comprar" onclick="comp('carne')" >
+        </div>
+
+        <div class="bloco" id="chocolate"><!--Chocolate-->
+            <img src="chocolate.png" class="propaganda"><br>
+            <p>Chocolate de marca generica</p>
+            <p>Preço : R$8,00</p>
+            <input type="button" value="Comprar" class="comprar" onclick="comp('chocolate')">
+        </div>
+
+        <div class="bloco" id="coca"onmouseenter="more('coca')" onmouseleave="low('coca')"><!--Coca-->
+            <img src="coca.png" class="propaganda">
+            <p>Coca Cola Lata</p>
+            <p>Preço : R$5,00</p>
+            <input type="button" value="Comprar" class="comprar" onclick="comp('coca')">
+        </div>
+
+        <div class="bloco" id="hamburguer"><!--Hamburguer-->
+            <img src="hamburguer.jpg" class="propaganda">
+            <p>Hamburguer de marca generica</p>
+            <p>Preço : R$27,90</p>
+            <input type="button" value="Comprar" class="comprar" onclick="comp('hamburguer')">
+        </div>
+    
+    </div>
+
+
+    <div class="lado">
+
+        <strong><p>Carrinho:</p></strong>
+        <div class="carrinho" id="carrinho"></div><!--Carrinho-->
+  
+        <p>Adicionar algo</p>-
+        Nome : <input type="text" id="nomei"><br>-
+        Preco : <input type="text" id="precoi"><br>-
+        URL : <input type="text"  id="urli"><br>
+        <input type="button" value="Adicionar" class="comprar" onclick="adicionar()">
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
